@@ -45,7 +45,7 @@ public class WeakSpot : MonoBehaviour
     IEnumerator WaitAndExecute()
     {
         // Attendre 1 seconde
-        yield return new WaitForSeconds(1.21f);
+        yield return new WaitForSeconds(1.5f);
 
         // Code à exécuter après 1 seconde
         Destroy(objectToDestroy); 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d5ee4f4f5cd6e5d4798a20eb5f9c8071
+guid: f381c5521d9a3f74698d858a35e4daac
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled_Artwork_0
+      name: cat__0
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 982c3245b3f024945a9302c709af653d
-      internalID: -155904473
+      spriteID: 639e2fb20b8bd0d409b0b2378604d51d
+      internalID: -153153402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork_1
+      name: cat__1
       rect:
         serializedVersion: 2
         x: 32
@@ -145,14 +145,56 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cac4b56640de5e9469ac247d146a5dbd
-      internalID: -1137685705
+      spriteID: 474cb0f57d410f74cbb2d6e90d17d5e5
+      internalID: -286096385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork_2
+      name: cat__2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 570ed3b7692e95346834486a9bb00ae7
+      internalID: 1510384800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat__3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da8f4a5a093b1f41b068552f2bd7070
+      internalID: 571459833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cat__4
       rect:
         serializedVersion: 2
         x: 0
@@ -166,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddd5fb6d359f6f5419c965e8369e0514
-      internalID: 1580203828
+      spriteID: d239c4cc131098d4b8e12da41f5dcaa3
+      internalID: 1586048390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork_3
+      name: cat__5
       rect:
         serializedVersion: 2
         x: 32
@@ -187,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c6ac2d5191fbeb8418a2afb46ba155c3
-      internalID: -1897669866
+      spriteID: 3b4bfea14129fb9429430254f50dc89d
+      internalID: -2051711250
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork_4
+      name: cat__6
       rect:
         serializedVersion: 2
         x: 64
@@ -208,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec7b2367195c5e84eb768b50ac368164
-      internalID: 2079516555
+      spriteID: 98d3a05c414636647a2dd68abbb1cc77
+      internalID: 46147065
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork_5
+      name: cat__7
       rect:
         serializedVersion: 2
         x: 96
@@ -229,14 +271,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a62e3bb19ce120744833c71b652972c0
-      internalID: 1412983161
+      spriteID: 27421b4852654114bb0a037dac15bbee
+      internalID: 632086770
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Untitled_Artwork_6
+      name: cat__8
       rect:
         serializedVersion: 2
         x: 128
@@ -250,8 +292,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 616337c235130d24c9b18d5d8dc953a1
-      internalID: 1803592233
+      spriteID: 061e29c1b66911a41812885ecfd89a07
+      internalID: -296267446
       vertices: []
       indices: 
       edges: []
@@ -267,13 +309,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Untitled_Artwork_0: -155904473
-      Untitled_Artwork_1: -1137685705
-      Untitled_Artwork_2: 1580203828
-      Untitled_Artwork_3: -1897669866
-      Untitled_Artwork_4: 2079516555
-      Untitled_Artwork_5: 1412983161
-      Untitled_Artwork_6: 1803592233
+      cat__0: -153153402
+      cat__1: -286096385
+      cat__2: 1510384800
+      cat__3: 571459833
+      cat__4: 1586048390
+      cat__5: -2051711250
+      cat__6: 46147065
+      cat__7: 632086770
+      cat__8: -296267446
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

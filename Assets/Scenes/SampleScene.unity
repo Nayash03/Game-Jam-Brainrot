@@ -4514,7 +4514,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7839920775108075088, guid: fec255633ee2a154ca0d4e2ce7d4ae8e, type: 3}
       propertyPath: m_Name
-      value: Enemy_Cat
+      value: Enemy_Cat_head_explose
       objectReference: {fileID: 0}
     - target: {fileID: 8487075495114289611, guid: fec255633ee2a154ca0d4e2ce7d4ae8e, type: 3}
       propertyPath: speed
