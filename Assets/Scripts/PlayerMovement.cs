@@ -4,7 +4,7 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public float moveSpeed;
-    private float Direction = 4;
+    public float Direction = 4;
 
 
 
