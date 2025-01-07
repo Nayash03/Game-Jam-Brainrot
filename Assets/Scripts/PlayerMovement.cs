@@ -72,6 +72,11 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    void OnDestroy()
+    {
+        Debug.LogWarning("Destroy called on player: " + gameObject.name);
+    }
 
+    
 
 }

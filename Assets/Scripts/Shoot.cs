@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
-    public Animator animator;
-    
-
-    void Update()
+    void Start()
     {
-        
-        if (Input.GetButtonDown("Fire1"))
-        {
-            animator.SetFloat("attack", 1);
-        }
+       if (gameObject.CompareTag("Bullet"))
+       {
+            Destroy(gameObject, 3f);
+       }
+       GetComponent<Rigidbody2D>().velocity= new Vector2(0, 1) * 4f;
         
     }
 }

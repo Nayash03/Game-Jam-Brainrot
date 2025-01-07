@@ -13,7 +13,7 @@ public class WeakSpot : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Bullet"))
         {
             playerInTrigger = true; 
         }
@@ -21,7 +21,7 @@ public class WeakSpot : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Bullet"))
         {
             playerInTrigger = false; 
         }
@@ -31,7 +31,7 @@ public class WeakSpot : MonoBehaviour
     {
         
        
-        if (playerInTrigger && Input.GetButtonDown("Fire1"))
+        if (playerInTrigger)
         {
             dead = true;
             animator.SetTrigger("dead");
