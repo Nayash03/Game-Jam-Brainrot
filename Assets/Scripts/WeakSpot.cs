@@ -8,6 +8,7 @@ public class WeakSpot : MonoBehaviour
 
     public Animator animator;
     private bool dead = false;
+    public float timerDead;
 
     
     private void OnTriggerEnter2D(Collider2D collision)
@@ -45,7 +46,7 @@ public class WeakSpot : MonoBehaviour
     IEnumerator WaitAndExecute()
     {
         // Attendre 1 seconde
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(timerDead);
 
         // Code à exécuter après 1 seconde
         Destroy(objectToDestroy); 
