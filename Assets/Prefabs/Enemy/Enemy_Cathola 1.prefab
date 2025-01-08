@@ -241,7 +241,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   waypoints:
-  - {fileID: 0}
+  - {fileID: 5635248074947489238, guid: bbb9650aaad432c4f9a032271c29c20b, type: 3}
 --- !u!95 &3924246583674164713
 Animator:
   serializedVersion: 5
@@ -306,5 +306,5 @@ Transform:
   m_Children:
   - {fileID: 7212702401432890137}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
