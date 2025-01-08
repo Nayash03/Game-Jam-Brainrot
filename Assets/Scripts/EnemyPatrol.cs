@@ -3,6 +3,7 @@ using UnityEngine;
 public class EnemyPatrol : MonoBehaviour
 {
     public float speed;
+    public int damageCollision = 20;
     public Transform[] waypoints;
 
     //public SpriteRenderer graphics;
@@ -27,6 +28,15 @@ public class EnemyPatrol : MonoBehaviour
             target = waypoints[destPoint];
             //graphics.flipX = !graphics.flipX;
          
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.CompareTag("Player"))
+        {
+             PlayerHealth playerHealth = collision.transform.GetComponent<PlayerHealth>();
+             playerHealth.TakeDamage(damageCollision);
         }
     }
 }

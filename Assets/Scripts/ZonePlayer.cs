@@ -6,7 +6,7 @@ public class ZonePlayer : MonoBehaviour
 {
     private bool isLive = true;
     private bool monsterInTrigger = false;
-    private bool isOK = true;
+    private bool isOK = false;
 
     public string levelToLoad;
 

@@ -1,10 +1,13 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerHealth : MonoBehaviour
 {
 
     public int maxHealth = 100;
     public int currentHealth;
+
+    public bool isInvincible = false;
 
     public HealthBar healthBar;
     
@@ -25,12 +28,34 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
-        healthBar.SetHealth(currentHealth);
+        if (!isInvincible)
+        {
+            currentHealth -= damage;
+            healthBar.SetHealth(currentHealth);
+            isInvincible = true;
+            StartCoroutine(HandleInvicibilityDelay());
+        }
+        
     }
 
     public int GetCurrentHealth()
     {
         return currentHealth;
     }
+
+    public IEnumerator HandleInvicibilityDelay()
+    {
+        while (isInvincible)
+        {
+            yield return new WaitForSeconds(3f);
+            isInvincible = false;
+        }
+        
+
+
+        
+    }
+
+ 
+
 }
