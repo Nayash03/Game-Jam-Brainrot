@@ -11,8 +11,7 @@ public class ShootController : MonoBehaviour
 
     void Start()
     {
-        // Si la référence au script PlayerMovement n'est pas assignée manuellement dans l'inspecteur,
-        // on peut la récupérer automatiquement avec FindObjectOfType
+
         if (playerMovement == null)
         {
             playerMovement = FindObjectOfType<PlayerMovement>();  // Recherche l'instance de PlayerMovement dans la scène

@@ -14,8 +14,8 @@ public class Shoot : MonoBehaviour
        {
             Destroy(gameObject, 3f);
        }
-        x = Mathf.Cos(Angle * Mathf.PI / 180) * 4f;
-        y = Mathf.Sin(Angle * Mathf.PI / 180) * 4f;
+        x = Mathf.Cos(Angle * Mathf.PI / 180) * 8f;
+        y = Mathf.Sin(Angle * Mathf.PI / 180) * 8f;
         GetComponent<Rigidbody2D>().velocity= new Vector2(x, y);
         
     }
