@@ -27,12 +27,8 @@ public class PlayerHealth : MonoBehaviour
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            TakeDamage(20);
-        }
+       
 
-        
     }
 
     public void TakeDamage(int damage)
