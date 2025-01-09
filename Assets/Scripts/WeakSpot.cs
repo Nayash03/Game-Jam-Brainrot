@@ -59,7 +59,6 @@ public class WeakSpot : MonoBehaviour
         {
             Debug.LogError("Instance de PlayerKillCpt non trouvée !");
         }
-        
         Destroy(objectToDestroy); 
     }
 }

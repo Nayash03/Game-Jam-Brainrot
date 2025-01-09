@@ -7,6 +7,7 @@ public class Shoot : MonoBehaviour
     public float Angle = 0;
     private float x, y;
     
+    
 
     void Start()
     {
@@ -19,4 +20,6 @@ public class Shoot : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity= new Vector2(x, y);
         
     }
+
+    
 }

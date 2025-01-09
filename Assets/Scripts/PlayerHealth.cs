@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class PlayerHealth : MonoBehaviour
 
     public AudioSource audioSource;
     public AudioClip sound;
+
+    public VideoPlayer videoPlayer;
     
     void Start()
     {
@@ -74,11 +77,22 @@ public class PlayerHealth : MonoBehaviour
         PlayerMovement.instance.enabled = false;
         audioSource.PlayOneShot(sound);
         StartCoroutine(WaitAfterDead());
+        
+        StartCoroutine(WaitAfterVideo());
     }
 
     IEnumerator WaitAfterDead()
     {
         yield return new WaitForSeconds(4f);
+        audioSource.Stop();
+        videoPlayer.Play(); 
+    }
+
+    IEnumerator WaitAfterVideo()
+    {
+        
+        yield return new WaitForSeconds(9f);
+    
         SceneManager.LoadScene("Menu"); 
     }
 
