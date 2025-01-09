@@ -13,6 +13,19 @@ public class PlayerMovement : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     private Vector3 velocity = Vector3.zero;
 
+    public static PlayerMovement instance;
+
+    private void Awake()
+    {
+        if (instance != null)
+        {
+            Debug.LogWarning("Il y a plus d'instance de PlayerMovement dans la scène");
+            return;
+        }
+
+        instance = this;
+    }
+
 
     void FixedUpdate()
     {

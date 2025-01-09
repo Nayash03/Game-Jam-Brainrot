@@ -6,6 +6,8 @@ public class WeakSpot : MonoBehaviour
     public GameObject objectToDestroy;
     private bool playerInTrigger = false;
 
+    public int cpt;
+
     public Animator animator;
     private bool dead = false;
     public float timerDead;
@@ -49,6 +51,7 @@ public class WeakSpot : MonoBehaviour
         yield return new WaitForSeconds(timerDead);
 
         // Code à exécuter après 1 seconde
+        cpt += 1;
         Destroy(objectToDestroy); 
     }
 }

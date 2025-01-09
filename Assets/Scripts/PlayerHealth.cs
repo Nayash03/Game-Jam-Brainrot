@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class PlayerHealth : MonoBehaviour
     public bool isInvincible = false;
 
     public HealthBar healthBar;
+
+    public AudioSource audioSource;
+    public AudioClip sound;
     
     void Start()
     {
@@ -24,6 +28,8 @@ public class PlayerHealth : MonoBehaviour
         {
             TakeDamage(20);
         }
+
+        
     }
 
     public void TakeDamage(int damage)
@@ -32,6 +38,16 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth -= damage;
             healthBar.SetHealth(currentHealth);
+
+
+            if (currentHealth < 1)
+            {
+                die();
+                return;
+              
+                //SceneManager.LoadScene("Menu");  
+            }
+
             isInvincible = true;
             StartCoroutine(HandleInvicibilityDelay());
         }
@@ -50,10 +66,14 @@ public class PlayerHealth : MonoBehaviour
             yield return new WaitForSeconds(3f);
             isInvincible = false;
         }
-        
+    }
 
-
+    public void die()
+    {
         
+        Debug.Log("Tu est mort");
+        PlayerMovement.instance.enabled = false;
+        audioSource.PlayOneShot(sound);
     }
 
  
