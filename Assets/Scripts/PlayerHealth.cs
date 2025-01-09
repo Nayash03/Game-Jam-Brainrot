@@ -45,7 +45,7 @@ public class PlayerHealth : MonoBehaviour
                 die();
                 return;
               
-                //SceneManager.LoadScene("Menu");  
+                 
             }
 
             isInvincible = true;
@@ -70,10 +70,16 @@ public class PlayerHealth : MonoBehaviour
 
     public void die()
     {
-        
         Debug.Log("Tu est mort");
         PlayerMovement.instance.enabled = false;
         audioSource.PlayOneShot(sound);
+        StartCoroutine(WaitAfterDead());
+    }
+
+    IEnumerator WaitAfterDead()
+    {
+        yield return new WaitForSeconds(4f);
+        SceneManager.LoadScene("Menu"); 
     }
 
  

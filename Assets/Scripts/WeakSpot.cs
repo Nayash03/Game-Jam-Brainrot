@@ -6,7 +6,7 @@ public class WeakSpot : MonoBehaviour
     public GameObject objectToDestroy;
     private bool playerInTrigger = false;
 
-    public int cpt;
+
 
     public Animator animator;
     private bool dead = false;
@@ -51,7 +51,15 @@ public class WeakSpot : MonoBehaviour
         yield return new WaitForSeconds(timerDead);
 
         // Code à exécuter après 1 seconde
-        cpt += 1;
+        if (PlayerKillCpt.Instance != null)
+        {
+            PlayerKillCpt.Instance.AddCptKill();
+        }
+        else
+        {
+            Debug.LogError("Instance de PlayerKillCpt non trouvée !");
+        }
+        
         Destroy(objectToDestroy); 
     }
 }
