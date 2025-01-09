@@ -18,4 +18,9 @@ public class PlayerKillCpt : MonoBehaviour
         CptKill += 1;
     }
 
+    public int GetCptKill()
+    {
+        return CptKill;
+    }
+
 }
